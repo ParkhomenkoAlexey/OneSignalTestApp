@@ -7,15 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B08A95CB84185125F67F4DD /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E4C10487160823D2B558DD /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		62C50ECFA9F55243A975E9FE /* Pods_OneSignalTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7593590C225C559D003FE067 /* Pods_OneSignalTestApp.framework */; };
 		EE7B9A2F2546CE3300587747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B9A2E2546CE3300587747 /* AppDelegate.swift */; };
 		EE7B9A312546CE3300587747 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B9A302546CE3300587747 /* SceneDelegate.swift */; };
 		EE7B9A332546CE3300587747 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B9A322546CE3300587747 /* ViewController.swift */; };
 		EE7B9A362546CE3300587747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B9A342546CE3300587747 /* Main.storyboard */; };
 		EE7B9A382546CE3500587747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7B9A372546CE3500587747 /* Assets.xcassets */; };
 		EE7B9A3B2546CE3500587747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B9A392546CE3500587747 /* LaunchScreen.storyboard */; };
+		EE7B9A4A2546D20800587747 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B9A492546D20800587747 /* NotificationService.swift */; };
+		EE7B9A4E2546D20800587747 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE7B9A472546D20800587747 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE7B9A4C2546D20800587747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE7B9A232546CE3300587747 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7B9A462546D20800587747;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE7B9A522546D20800587747 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE7B9A4E2546D20800587747 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D4E7AEBBDF2E931244B171A /* Pods-OneSignalTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalTestApp.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalTestApp/Pods-OneSignalTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		13E4C10487160823D2B558DD /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		689A6588EC82BBC2CC7CB64C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		7593590C225C559D003FE067 /* Pods_OneSignalTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DA68087F30C31664C4D603 /* Pods-OneSignalTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalTestApp.release.xcconfig"; path = "Target Support Files/Pods-OneSignalTestApp/Pods-OneSignalTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		EE175CBA940E845BCFBB7A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		EE7B9A2B2546CE3300587747 /* OneSignalTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSignalTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B9A2E2546CE3300587747 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7B9A302546CE3300587747 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +58,9 @@
 		EE7B9A372546CE3500587747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7B9A3A2546CE3500587747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE7B9A3C2546CE3500587747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B9A472546D20800587747 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B9A492546D20800587747 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EE7B9A4B2546D20800587747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +68,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C50ECFA9F55243A975E9FE /* Pods_OneSignalTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B9A442546D20800587747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B08A95CB84185125F67F4DD /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF969E80F13E480F914D11C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13E4C10487160823D2B558DD /* Pods_OneSignalNotificationServiceExtension.framework */,
+				7593590C225C559D003FE067 /* Pods_OneSignalTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4AEE9D38E4B43F2792C009 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				689A6588EC82BBC2CC7CB64C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				EE175CBA940E845BCFBB7A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				0D4E7AEBBDF2E931244B171A /* Pods-OneSignalTestApp.debug.xcconfig */,
+				99DA68087F30C31664C4D603 /* Pods-OneSignalTestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EE7B9A222546CE3300587747 = {
 			isa = PBXGroup;
 			children = (
 				EE7B9A2D2546CE3300587747 /* OneSignalTestApp */,
+				EE7B9A482546D20800587747 /* OneSignalNotificationServiceExtension */,
 				EE7B9A2C2546CE3300587747 /* Products */,
+				EE4AEE9D38E4B43F2792C009 /* Pods */,
+				CF969E80F13E480F914D11C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7B9A2B2546CE3300587747 /* OneSignalTestApp.app */,
+				EE7B9A472546D20800587747 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +137,15 @@
 			path = OneSignalTestApp;
 			sourceTree = "<group>";
 		};
+		EE7B9A482546D20800587747 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B9A492546D20800587747 /* NotificationService.swift */,
+				EE7B9A4B2546D20800587747 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,18 +153,39 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE7B9A3F2546CE3500587747 /* Build configuration list for PBXNativeTarget "OneSignalTestApp" */;
 			buildPhases = (
+				D9EC9B32DDE503320EE8DAC9 /* [CP] Check Pods Manifest.lock */,
 				EE7B9A272546CE3300587747 /* Sources */,
 				EE7B9A282546CE3300587747 /* Frameworks */,
 				EE7B9A292546CE3300587747 /* Resources */,
+				EE7B9A522546D20800587747 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE7B9A4D2546D20800587747 /* PBXTargetDependency */,
 			);
 			name = OneSignalTestApp;
 			productName = OneSignalTestApp;
 			productReference = EE7B9A2B2546CE3300587747 /* OneSignalTestApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EE7B9A462546D20800587747 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B9A4F2546D20800587747 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				6EE8E9FED6A49B7E661211B6 /* [CP] Check Pods Manifest.lock */,
+				EE7B9A432546D20800587747 /* Sources */,
+				EE7B9A442546D20800587747 /* Frameworks */,
+				EE7B9A452546D20800587747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = EE7B9A472546D20800587747 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +197,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					EE7B9A2A2546CE3300587747 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					EE7B9A462546D20800587747 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -115,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				EE7B9A2A2546CE3300587747 /* OneSignalTestApp */,
+				EE7B9A462546D20800587747 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +234,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE7B9A452546D20800587747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EE8E9FED6A49B7E661211B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EC9B32DDE503320EE8DAC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE7B9A272546CE3300587747 /* Sources */ = {
@@ -143,7 +301,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE7B9A432546D20800587747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7B9A4A2546D20800587747 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE7B9A4D2546D20800587747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7B9A462546D20800587747 /* OneSignalNotificationServiceExtension */;
+			targetProxy = EE7B9A4C2546D20800587747 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EE7B9A342546CE3300587747 /* Main.storyboard */ = {
@@ -283,7 +457,9 @@
 		};
 		EE7B9A402546CE3500587747 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4E7AEBBDF2E931244B171A /* Pods-OneSignalTestApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,7 +478,9 @@
 		};
 		EE7B9A412546CE3500587747 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DA68087F30C31664C4D603 /* Pods-OneSignalTestApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +492,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyParkhomenko.OneSignalTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE7B9A502546D20800587747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689A6588EC82BBC2CC7CB64C /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyParkhomenko.OneSignalTestApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE7B9A512546D20800587747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE175CBA940E845BCFBB7A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeyParkhomenko.OneSignalTestApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +556,15 @@
 			buildConfigurations = (
 				EE7B9A402546CE3500587747 /* Debug */,
 				EE7B9A412546CE3500587747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B9A4F2546D20800587747 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B9A502546D20800587747 /* Debug */,
+				EE7B9A512546D20800587747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
